@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe5e5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px; /* Added gap between sections */
+    max-width: 900px; /* Increased max width to accommodate both columns */
+    margin: 20px;
+}
+
+.gif-left, .gif-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px; /* Adjust the size of each GIF container */
+}
+
+.container .tenor-gif-embed {
+    max-width: 300px;
+}
+
+.word {
+    margin: 20px;
+    padding: 0;
+}
+
+.container .btn {
+    display: flex;
+    gap: 40px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #111;
+    background-color: #fff;
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
+}
+
+/* New Layout */
+.container {
+    display: flex;
+    justify-content: space-between; /* Aligns the gif-left and gif-right sections to the left and right */
+    align-items: flex-start; /* Aligns them to the top */
+    flex-wrap: wrap;
+}
+
+.gif-left, .gif-right {
+    flex-basis: 48%; /* Each takes up about half of the width */
+}
